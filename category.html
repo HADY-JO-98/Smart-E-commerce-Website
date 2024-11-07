@@ -3,28 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart E-Commerce</title>
-    <link rel="stylesheet" href="style/style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/category.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-[rgba(6,26,57,.38)]">
-    <div class="head h-[103vh] w-full">
-        <div class="nav h-[60px] flex flex-wrap flex-col">
+    <div class="head h-screen w-full">
+        <div class="nav h-[60px] bg-[black] flex flex-wrap flex-col">
             <div class="logo w-[33%] h-full">
                 <h1 class="w-[90px] m-[5px] ml-[55px] text-[2em] font-bold bg-gradient-to-r from-blue-500 to-[#53089b] text-transparent bg-clip-text">
                     MLSA
                 </h1>
             </div>
             <div class="links w-[33%] h-full flex justify-center items-center">
+                <a href="index.html" class="m-[5px] text-[1.1em] font-bold text-blue-500">Home</a>
                 <div class="models cursor-pointer relative m-[5px] text-[1.1em] font-bold text-blue-500" id="models">
                     <p>Category</p>
                     <div class="dropdown" id="dpdw">
-                        <a href="category.html" class="model1" data-index="0">LINK</a>
-                        <a href="category.html" class="model2" data-index="1">LINK</a>
-                        <a href="category.html" class="model3" data-index="2">LINK</a>
-                        <a href="category.html" class="model4" data-index="3">LINK</a>
-                        <a href="category.html" class="model5" data-index="4">LINK</a>
-                        <a href="category.html" class="model6" data-index="5">LINK</a>
+                        <a href="model.html?model=2003" class="model1" data-index="0">LINK</a>
+                        <a href="model.html?model=2010" class="model2" data-index="1">LINK</a>
+                        <a href="model.html?model=2015" class="model3" data-index="2">LINK</a>
+                        <a href="model.html?model=2018" class="model4" data-index="3">LINK</a>
+                        <a href="model.html?model=2018" class="model5" data-index="4">LINK</a>
+                        <a href="model.html/model=2024" class="model6" data-index="5">LINK</a>
                     </div>
                 </div>
                 <a href="#" class="m-[5px] text-[1.1em] font-bold text-blue-500">Services</a>
@@ -36,27 +37,17 @@
                 <a href="#" class="signup mr-[40px] bg-gradient-to-r from-[#53089b] to-blue-500 text-transparent bg-clip-text text-[1.1em] font-bold">Sign Up</a>
             </div>
         </div>
-        <div class="welcome h-[calc(101vh-60px)] flex flex-col flex-wrap justify-center items-start">
-            <div class="word w-1/2 pl-[20px]">
-                <h1 class="text-[2em] font-bold text-blue-500"></h1>
-                <h2 class="text-[1.5em] font-bold text-blue-500"></h2>
-                <h2 class="text-[1.5em] font-bold text-blue-500"></h2>
-            </div>
+        <div class="welcome h-[calc(100vh-60px)] flex flex-col flex-wrap justify-center items-canter">
         </div>
     </div>
     <div class="hero width-full">
-        <div class="content w-[100%] m-[20px] p-[10px] flex flex-wrap justify-center items-center">
-            <a href="#">
-                <div class="cards flex flex-col flex-wrap justify-center items-center bg-white w-[18em] px-30px pt-10px pb-[25px] m-[15px] cursor-pointer rounded-[9px]">
-                    <div class="card_trn flex flex-wrap flex-col justify-center items-center">
-                        <h2 class=" text-black text-[1.5em] font-800 my-[15px] pl-[1px]">Laptop</h2>
-                        <img class="img_style rounded-[50%] p-[10px] w-[200px] h-[200px]" src="images/laptop.jpg" alt="dcdfefef">
-                    </div>
-                    <div class="info">
-                        <p class="text-center text-[rgb(66,66,66)] text-[1.2em] w-[230px] font-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet fuga maiores, cupiditate temporibus possimus magni a soluta molestias! Temporibus, esse!</p>
-                    </div>
-                </div>
-            </a>
+        <div class="prods flex flex-wrap justify-center items-center m-[25px] p-[10px]">
+            <div class="item w-[21%] text-center inline-block m-[10px] p-[3px] rounded-[10px] bg-[#fff]">
+                <img src="images/devices1.jpg" class="pic w-full h-[242px] rounded-[10px]">
+                <p class="bg-gradient-to-r from-blue-500 to-[#53089b] text-transparent bg-clip-text text-[1.1em] font-bold text-center">Love Master</p>
+                <p class="bg-gradient-to-r from-blue-500 to-[#53089b] text-transparent bg-clip-text text-[1.1em] font-bold text-center">129 $</p>
+                <input type="button" value="Add To Cart" class="cart bg-gradient-to-r from-blue-500 to-[#53089b] text-transparent bg-clip-text text-[1.3em] font-bold text-center h-[31px] w-[93%] rounded-[2px] m-[2%]">
+            </div>
         </div>
     </div>
     <div class="foot">
@@ -108,6 +99,5 @@
             <p class="text-center text-white text-[20px] font-[800] p-[11px]">CopyRight &copy; All Rights Reserved Created By <span class="organize text-[#B2989E] font-[800]">MLSA</span></p>
         </div>
     </div>
-    <script src="script/script.js"></script>
 </body>
 </html>
